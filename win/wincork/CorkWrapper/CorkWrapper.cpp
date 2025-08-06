@@ -1,8 +1,8 @@
 #include "pch.h"
-#include "CorkWrapper.h"
-#include "cork.h"
 #include <cstdlib>  // for malloc/free
 #include <cstring>  // for memcpy
+#include "CorkWrapper.h"
+#include "cork.h" // Cork 主头文件
 
 bool PerformBooleanOperation(
     const Vector3f* verticesA, int vertexCountA,
@@ -11,8 +11,7 @@ bool PerformBooleanOperation(
     const int* indicesB, int indexCountB,
     BooleanOp operation,
     Vector3f** outVertices, int* outVertexCount,
-    int** outIndices, int* outIndexCount
-)
+    int** outIndices, int* outIndexCount)
 {
     // === 构造 CorkTriMesh A ===
     CorkTriMesh meshA;
@@ -91,3 +90,5 @@ void FreeMeshResult(Vector3f* vertices, int* indices)
     delete[] vertices;
     delete[] indices;
 }
+
+

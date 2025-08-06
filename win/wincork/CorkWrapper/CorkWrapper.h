@@ -1,24 +1,27 @@
 #pragma once
 
-#ifdef CORKWRAPPER_EXPORTS
+#ifdef _WIN32
 #define CORK_API __declspec(dllexport)
 #else
-#define CORK_API __declspec(dllimport)
+#define CORK_API
 #endif
 
-extern "C"
+// 枚举与结构体不能在 extern "C" 块中声明
+enum BooleanOp
 {
-    enum BooleanOp
-    {
-        Union = 0,
-        Intersection = 1,
-        Difference = 2
-    };
+    Union = 0,
+    Intersection = 1,
+    Difference = 2
+};
 
-    struct Vector3f
-    {
-        float x, y, z;
-    };
+struct Vector3f
+{
+    float x, y, z;
+};
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
     CORK_API bool PerformBooleanOperation(
         const Vector3f* verticesA, int vertexCountA,
@@ -31,6 +34,7 @@ extern "C"
     );
 
     CORK_API void FreeMeshResult(Vector3f* vertices, int* indices);
+
+#ifdef __cplusplus
 }
-
-
+#endif
