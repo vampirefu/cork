@@ -134,6 +134,7 @@
     <None Include="..\..\src\rawmesh\rawMesh.tpp">
       <Filter>Header Files\rawmesh</Filter>
     </None>
+    <None Include="..\..\lib\mpir-x64-windows\bin\mpir.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\util\log.cpp">

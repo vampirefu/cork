@@ -17,3 +17,10 @@ win/wincork/*.opensdf
 # in case you're on mac
 .DS_Store
 
+/win/wincork/.vs/wincork
+/win/wincork/CorkWrapper/x64
+/win/wincork/wincork/Debug
+/win/wincork/wincork/x64/Debug
+/win/wincork/wincork_lib/x64
+/win/wincork/wincork_static/x64/Release
+/win/wincork/x64
