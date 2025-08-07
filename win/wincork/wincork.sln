@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wincork", "wincork.vcxproj", "{AD6B1A8B-6983-40ED-9EF2-A7FFC457517E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wincork_static", "wincork_lib.vcxproj", "{F4728717-E100-4C6A-A156-EEE4B97DEEFD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wincork_static", "wincork_static.vcxproj", "{F4728717-E100-4C6A-A156-EEE4B97DEEFD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CorkWrapper", "CorkWrapper\CorkWrapper.vcxproj", "{DAB8843C-0EBC-48C1-BBBB-04834E6AEAEE}"
 EndProject
